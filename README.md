@@ -3,7 +3,7 @@ Applications of Econometrics is a compulsory course at the University of Edinbur
 
 
 For those who do not know how to compile TeX files:
-- Download the zip file (this should give you three files: main.tex, preamble.tex, folder of photos)
+- Download the zip file in the "code" dropdown (this should give you three files: main.tex, preamble.tex, folder of photos)
 - all of these files are important
 - go to overleaf (or other LaTeX compiler) and add all of these files to a project
 - everything should work
