@@ -3050,7 +3050,7 @@ That linear index will return a single number, like normal, but then we use our 
 Logit and Probit then result from what we assume about the distribution of the error term
     \begin{itemize}
         \item If $\epsilon \sim N(0,1)$ 
-        \[P(\epsilon > - \boldsymbol{x\beta}) = 1 - \Phi (-\boldsymbol{x\beta}) = \phi(\boldsymbol{x\beta})\]
+        \[P(\epsilon > - \boldsymbol{x\beta}) = 1 - \Phi (-\boldsymbol{x\beta}) = \Phi(\boldsymbol{x\beta})\]
         which explains why \textbf{probit} picks $G(\boldsymbol{x\beta}) = \Phi( \boldsymbol{x\beta})$
         \item If $\epsilon$ has the standard logistic distribution
         \[P(\epsilon > - \boldsymbol{x\beta}) = 1- \Lambda (- \boldsymbol{x\beta}) = \Lambda(\boldsymbol{x\beta})\]
