@@ -940,7 +940,7 @@ We can directly model serial correlation and apply \textbf{generalised least squ
     Consider the following model with AR(1) errors:
     \begin{gather*}
         y_t = \beta_0 + \beta_1 x_t + u_t \\
-        u_t = \rho y_{t-1} + e_t
+        u_t = \rho u_{t-1} + e_t
     \end{gather*}
     For $t\geq 2$, we have
     \begin{equation}
@@ -1523,7 +1523,11 @@ When we test for a unit root in $\hat{u_t}$, we update the DF critical values to
 \end{array}
 \end{aligned}
 \end{equation}
-We can add lags of $d\hat{u}_t$ if $d\hat{u}_t$ is serially correlated, and use the \textbf{same} critical values here.
+We can add lags of $d\hat{u}_t$ if $d\hat{u}_t$ is serially correlated, and use the \textbf{same} critical values here. This makes the test exactly the same structure as the ADF, but we must remember to use the critical values for the Engle-Granger test.
+
+\begin{note}
+    All (A)DF tests on residuals, are Engle-Granger tests, and the relevant critical values must be used.
+\end{note}
 
 \paragraph{Extension: Random walk with drift} \mbox{}
 
