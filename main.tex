@@ -1431,8 +1431,7 @@ The \textbf{Augmented Dickey-Fuller} test tests for a unit root in $y_t$ when th
 
 If we take Model 1 from the Unit Root definition:
 \[y_t = \varphi y_{t-1} + u_t\]
-and now say $u_t = \theta_1 u_{t-1} + e_t, |\theta_1|<1$ and $e_t\sim i.i.d(0,]sigm
-^2)$. Then from the same work earlier in the section, we get the equation:
+and now say $u_t = \theta_1 u_{t-1} + e_t, |\theta_1|<1$ and $e_t\sim i.i.d(0,\sigma^2)$. Then from the same work earlier in the section, we get the equation:
 
 \[y_t = b_1 y_{t-1} + b_2 y_{t-2} + e_t\]
 
@@ -1900,8 +1899,7 @@ This means that we have \textbf{linear parameters}
 \item [FE.3] Each explanatory variable changes over time, and \textbf{no perfect linear relationships} exist among the explanatory variables.
 \item [FE.4] $E(u_{it}|\boldsymbol{X}_i, a_i) = 0 \Rightarrow x$ is uncorrelated with $u$ for all time periods conditional on $a_i$, \textbf{strict exogeneity}. 
 \item[FE.5] \textbf{Homoskedasticity} $\Rightarrow Var(u_{it}|\boldsymbol{X}_i,a_i) = \sigma_u^2$
-\item [FE.6] \textbf{No serial correlation}: $\Ddot{u}_{it}$ is uncorrelated over time $\Rightarrow Cov(u_{it},u_{is}|\boldsymbol{X}_i, a_i) = 0 ]forall
-t\neq s$
+\item [FE.6] \textbf{No serial correlation}: $u_{it}$ is uncorrelated over time $\Rightarrow Cov(u_{it},u_{is}|\boldsymbol{X}_i, a_i) = 0, \forall t\neq s$
 \end{itemize}
 
 
@@ -2015,7 +2013,7 @@ Here we assume that $cov(a_i,x_{itj}) = 0 \forall j,t$. $a_i$ is uncorrelated wi
 
 Let the composite error term be $v_{it} = a_i + u_{it}$. This gives us:
 
-\[y_{i t}=\beta_0+\beta_1 x_{i t 1}+\ldots+\beta_{\jmath} x_{i t)}+v_{it}\]
+\[y_{i t}=\beta_0+\beta_1 x_{i t 1}+\ldots+\beta_{\jmath} x_{i t}+v_{it}\]
 
 where $v_{it}$ is correlated over time:
 \begin{equation}
@@ -2996,7 +2994,7 @@ That linear index will return a single number, like normal, but then we use our 
         \label{Probit}
         G(z) = \Phi (z) = \int_{-\infty}^\infty \phi (v) dv
     \end{equation}
-    where $\phi(v)$ is the probability distribution function (pdf).
+    where $\phi(v)$ is the probability density function (pdf).
 \end{definition}
 
 \begin{definition}
